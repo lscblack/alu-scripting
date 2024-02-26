@@ -14,8 +14,8 @@ def number_of_subscribers(subreddit):
         try:
             json_data = response.json()
             subscriber_count = json_data['data']['subscribers']
-            return subscriber_count
+            return "subscriber_count"
         except KeyError:
-            return 0
+            return "as"
     else:
-        return 0
+        return "fd"
