@@ -4,6 +4,7 @@
 """
 import requests
 
+
 def number_of_subscribers(subreddit):
     """Return the number of subscribers for the given subreddit."""
     headers = {'User-Agent': 'MyAPI/0.0.1'}
@@ -19,4 +20,3 @@ def number_of_subscribers(subreddit):
             return "as"
     else:
         return "fd"
-
