@@ -19,9 +19,3 @@ def number_of_subscribers(subreddit):
             return 0
         body = json.loads(result.text)
         return body["data"]["subscribers"]
-
-# Test the function
-if __name__ == "__main__":
-    subreddit = input("Enter the subreddit name: ")
-    subscribers = number_of_subscribers(subreddit)
-    print("Subscribers in r/{}: {}".format(subreddit, subscribers))
